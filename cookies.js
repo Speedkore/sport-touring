@@ -54,7 +54,7 @@ $(function() {
     if (analytics == "true") {
         cookiesParty();
     } else {
-        $('body').prepend('<div onclick="$(\'.cookieMsg\').fadeOut(\'slow\');" class="cookieMsg" style="padding:0 20px;color:black;border-bottom: black 3px solid;font-size: small;"> <p>Este sitio web utiliza cookies propias y de terceros para dar un mejor servicio. Las cookies no se utilizan para recoger información de carácter personal. Si continúa navegando se considera que acepta su uso. Para más información visite nuestra <a href="aviso-legal-cookies">política de cookies</a> <a style="float: right;margin-right:50px">Cerrar</a>  </p></div>');
+        $('body').prepend('<div onclick="$(\'.cookieMsg\').fadeOut(\'slow\');" class="cookieMsg" style="padding:0 20px;color:black;border-bottom: black 3px solid;font-size: small;"> <p>Este sitio web utiliza cookies propias y de terceros para dar un mejor servicio. Las cookies no se utilizan para recoger información de carácter personal. Si continúa navegando se considera que acepta su uso. Para más información visite nuestra <a href="aviso-legal-cookies.html">política de cookies</a> <a style="float: right;margin-right:50px">Cerrar</a>  </p></div>');
         $(window).on("scroll click", acceptCookies);
     }
 });
