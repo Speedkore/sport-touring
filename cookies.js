@@ -1,6 +1,5 @@
 $(function() {
     var analytics = $.cookie('analytics');
-    var GA_ID = "UA-74138032-1";
     function cookiesParty() {
          
         // Google analytics
@@ -16,11 +15,8 @@ $(function() {
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
  
-        if (!window.GA_ID) {
-            console.error("There is no window.GA_ID defined. Set it to your google analytics id.")
-        }
  
-        ga('create', window.GA_ID, 'auto');
+        ga('create', 'UA-74138032-1', 'auto');
         ga('send', 'pageview');
         ga('set', 'anonymizeIp', true);
  
@@ -46,6 +42,7 @@ $(function() {
     }
  
     function acceptCookies(e) {
+        console.log(e);
         $.cookie('analytics', 'true', {expires: 728, path: '/'});
         cookiesParty();
         $(window).off("scroll click", acceptCookies);
