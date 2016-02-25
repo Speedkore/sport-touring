@@ -21,11 +21,11 @@ body {
    .content {
         overflow-x: scroll;
         max-width: inherit;
+        margin: 5px 5px;
     }
     .table{
-        width:1000px;
+        width:878px;
         max-width: inherit;
-        margin: 5px 5px;
     }
 }
  @media screen and (min-width: 768px) {
