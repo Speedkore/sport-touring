@@ -1,7 +1,6 @@
 $(function() {
     var analytics = $.cookie('analytics');
     function cookiesParty() {
-         
         // Google analytics
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
