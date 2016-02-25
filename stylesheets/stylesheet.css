@@ -15,29 +15,55 @@ body {
 }
 
  @media screen and (max-width: 767px) {
-    h1,h3, th, td {
-        font-size: 0.9em!important;
+    h1, h2, h3 {
+        font-size: 0.95em!important;
     }
-
+   .content {
+        width: 620px !important;
+        overflow-x: scroll;
+        max-width: inherit;
+    }
+    .table{
+        width:1300px;
+        max-width: inherit;
+    }
 }
  @media screen and (min-width: 768px) {
-    h1, h3, th, td {
-        font-size: 1.2em!important;
+    h1, h2, h3 {
+        font-size: 1.3em!important;
     }
+    .content {
+        max-width: 1220px !important;
+        margin: 20px auto;
+    }
+    .table{
+    
+    }
+}
+
+.table{
+    table-layout: fixed;
+}
+.content {
+} 
+
+td, tr{
+    font-size: 0.95em!important;
 }
 .container-fluid {
     padding: 0!important;
 }
-.content {
-    max-width:1170px!important;
-    margin: 20px auto;
-    
-}
+
 h1 {
     font-weight: bold;
     line-height:2em;
     max-width:1000px;
     margin: 0 auto;
+}
+
+h2 {
+    color: #159957;
+    font-weight: bold;
 }
 
 h3 {
