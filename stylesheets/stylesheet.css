@@ -25,6 +25,7 @@ body {
     }
     .table{
         width:778px;
+        color: red;
         max-width: inherit;
     }
 }
