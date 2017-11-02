@@ -79,3 +79,14 @@ td {
     hyphens: auto;
 }
 
+#twitter-widget-0{
+    position: relative !important;
+    top: -4px;
+}
+
+#___plusone_0{
+
+}
+#fb-share-button{
+    top: -9px;
+}
